@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>startpage</title>
+</head>
+
+<body>
+    <!-- Background:-->
+    <!-- https://picsum.photos/ -->
+    <!-- https://source.unsplash.com/ -->
+
+    <!-- Greeting -->
+    <!-- I want to see the time, the weather, and a nice, simple greeting-->
+    <span class="greeting">
+        <h1 id="greeting-header">Hello, Curtis</h1>
+        <div id="date-time"></div>
+        <div id="weather"></div>
+    </span>
+
+    <br>
+
+    <!-- Web Search -->
+    <div class="search">
+        <!-- This div will be a provider list using icons -->
+        <div id="search-provider-icon"></div>
+
+        <!-- The search form -->
+        <form action="https://www.google.com/search" method="get" class="search-form" name="search-form"
+            target="_blank">
+            <input autocomplete="off" id="search-input" class="form-control" name="q" placeholder="Google..."
+                required="required" type="text">
+            <!-- Replace this button with an embedded search icon -->
+            <button class="button search-button" type="submit">Search</button>
+        </form>
+    </div>
+
+    <br>
+
+    <!-- Links Container -->
+    <h2>Links</h2>
+    <div class="link-section">
+        <!-- Developer | Entertainment | News | Social -->
+        <div class="card">
+            <h3>Developer</h3>
+            <a href="https://github.com/curtisbridges">GitHub</a>
+            <a href="https://stackoverflow.com/">StackOverflow</a>
+            <a href="https://colorhunt.co/palettes/popular">ColorHunt</a>
+        </div>
+        <div class="card">
+            <h3>Entertainment</h3>
+            <a href="https://open.spotify.com/">Spotify</a>
+            <a href="https://www.netflix.com/browse">Netflix</a>
+            <a href="https://www.disneyplus.com/">Disney+</a>
+            <a href="http://www.imdb.com/">IMDb</a>
+            <a href="https://www.justwatch.com/us">JustWatch</a>
+        </div>
+        <div class="card">
+            <h3>Google</h3>
+            <a href="https://www.youtube.com/">YouTube</a>
+            <a href="https://mail.google.com/">Gmail</a>
+            <a href="https://calendar.google.com/">Calendar</a>
+            <a href="https://contacts.google.com/">Contacts</a>
+            <a href="https://photos.google.com/">Photos</a>
+            <a href="https://maps.google.com/">Maps</a>
+            <a href="https://drive.google.com/">Drive</a>
+        </div>
+        <div class="card">
+            <h3>News</h3>
+            <a href="https://feedly.com/i/my">Feedly</a>
+            <a href="https://app.getpocket.com/">Pocket</a>
+            <a href="https://www.theverge.com/">The Verge</a>
+            <a href="https://www.bbc.com/">BBC</a>
+            <a href="https://www.nytimes.com/">NY Times</a>
+            <a href="http://www.espn.com/">ESPN</a>
+        </div>
+        <div class="card">
+            <h3>Shopping</h3>
+            <a href="http://www.amazon.com/">Amazon</a>
+            <a href="https://drop.com/all-communities/drops/newest">Drop</a>
+            <a href="https://kbdfans.com/">KBDFans</a>
+            <a href="https://thewirecutter.com/">Wirecutter</a>
+        </div>
+        <div class="card">
+            <h3>Social</h3>
+            <a href="https://twitter.com/home">Twitter</a>
+            <a href="https://www.reddit.com/">Reddit</a>
+            <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/search.js"></script>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/weather.js"></script>
+
+</body>
+
+</html>
