@@ -48,6 +48,10 @@ h1, h2, h3 {
     display: block;
 }
 
+.card > a:hover {
+    color: #ececec;
+}
+
 .search-form {
     display: flex;
 }

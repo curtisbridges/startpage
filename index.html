@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>cmb Start</title>
+    <title>startpage</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <!-- I want to see the time, the weather, and a nice, simple greeting-->
     <span class="greeting">
         <h1 id="greeting-header">Hello, Curtis</h1>
-        <div id="time-date"></div>
+        <div id="date-time"></div>
         <div id="weather"></div>
     </span>
 
@@ -31,7 +31,7 @@
         <!-- The search form -->
         <form action="https://www.google.com/search" method="get" class="search-form" name="search-form"
             target="_blank">
-            <input autocomplete="off" class="form-control search-input" name="q" placeholder="Google..."
+            <input autocomplete="off" id="search-input" class="form-control" name="q" placeholder="Google..."
                 required="required" type="text">
             <!-- Replace this button with an embedded search icon -->
             <button class="button search-button" type="submit">Search</button>
@@ -92,6 +92,10 @@
             <a href="https://www.instagram.com/">Instagram</a>
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="scripts/search.js"></script>
+    <script src="scripts/time.js"></script>
 
 </body>
 
