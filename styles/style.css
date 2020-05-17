@@ -1,8 +1,12 @@
 /* Colors from: https://colorhunt.co/palette/179372 */
 
+*, *:first, *:last {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
-    /* width: 80%; */
+    width: 80%;
     text-align: center;
     margin: auto auto;
     background-color: #222831;
@@ -24,22 +28,23 @@ h1, h2, h3 {
 }
 
 .link-section {
-    /* width: 100%; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
 }
 
 .card {
     background-color: #30475e;
     border-radius: .25rem;
     padding: 1rem;
-    width: 20%;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width: 10rem;
 }
 
 .card > a {
     color: #c1a57b;
-    text-align: start;
+    text-align: center;
     display: block;
 }
 
