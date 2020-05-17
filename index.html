@@ -17,16 +17,25 @@
     <!-- I want to see the time, the weather, and a nice, simple greeting-->
     <span class="greeting">
         <h1 id="greeting-header">Hello, Curtis</h1>
-        <div id="time-date" />
-        <div id="weather" />
+        <div id="time-date"></div>
+        <div id="weather"></div>
     </span>
 
     <br>
 
     <!-- Web Search -->
     <div class="search">
-        <div id="search-provider-icon" />
-        <input type="text" id="search-input">
+        <!-- This div will be a provider list using icons -->
+        <div id="search-provider-icon"></div>
+
+        <!-- The search form -->
+        <form action="https://www.google.com/search" method="get" class="search-form" name="search-form"
+            target="_blank">
+            <input autocomplete="off" class="form-control search-input" name="q" placeholder="Google..."
+                required="required" type="text">
+            <!-- Replace this button with an embedded search icon -->
+            <button class="button search-button" type="submit">Search</button>
+        </form>
     </div>
 
     <br>

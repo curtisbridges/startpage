@@ -42,3 +42,19 @@ h1, h2, h3 {
     text-align: start;
     display: block;
 }
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: .25rem;
+}
+
+.search-button {
+    padding: .5rem;
+    border-radius: .25rem;
+    margin: 0 0 0 1rem;
+}
