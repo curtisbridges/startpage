@@ -2,7 +2,6 @@ window.onload = (event) => {
     const search = document.getElementById('search-input')
     search.focus()
 
-
     search.addEventListener('keydown', event => {
         if (event.keyCode === 13) {
             console.log('going')

@@ -5,7 +5,9 @@ function updateTime() {
     const currentDate = new Date();
 
     const timeOptions = {
-        hour12: false
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit'
     }
     const timeString = currentDate.toLocaleTimeString('en-US', timeOptions);
 
