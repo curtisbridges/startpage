@@ -67,3 +67,12 @@ h1, h2, h3 {
     border-radius: .25rem;
     margin: 0 0 0 1rem;
 }
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 640px) {
+    .card {
+        width: 90%; /* The width is 100%, when the viewport is 640px or smaller */
+        max-width: 30rem;
+        min-width: 12rem;
+    }
+}
