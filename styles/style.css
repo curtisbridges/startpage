@@ -14,17 +14,37 @@ body {
     padding: 1rem;
 }
 
-h1, h2 {
-    color: #c1a57b;
-}
-
 h1, h2, h3 {
     margin: 0 0 1rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea:focus, input:focus {
+    outline: none; 
 }
 
 #search-input {
     width: 100%;
     padding: .5rem 0 .5rem 0;
+}
+
+#search-input:focus {
+    border: 1px solid #c1a57b;
+  }
+
+.form-control {
+    border: 1px solid #c1a57b;
+}
+
+.search-button {
+    /* placeholder */
+}
+
+.time {
+    font-size: 8rem;
 }
 
 .link-section {
@@ -39,17 +59,34 @@ h1, h2, h3 {
     padding: 1rem;
     margin-bottom: 1rem;
     width: 10rem;
-    border-top: 4px solid #ececec;
+    border-top: 4px solid #c1a57b;
 }
 
-.card > a {
-    color: #c1a57b;
+.card > .site-link {
+    color: #ececec;
     text-align: start;
     display: block;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }
 
-.card > a:hover {
+.site-link:hover {
+    border: 1px solid white;
+}
+
+.site-link > a:visited, .site-link > a:link {
     color: #ececec;
+}
+
+/* .card > .site-link > a:hover {
+    color: #c1a57b;
+} */
+
+.icon {
+    color: #ececec;
+    display: inline-block;
+    padding-right: .25rem;
+    width: 2rem;
 }
 
 .search-form {
@@ -66,6 +103,11 @@ h1, h2, h3 {
     padding: .5rem;
     border-radius: .25rem;
     margin: 0 0 0 1rem;
+}
+
+.site-link {
+    display: block;
+    padding: .5rem;
 }
 
 /* Use a media query to add a breakpoint at 800px: */
