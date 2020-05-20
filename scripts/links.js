@@ -8,7 +8,7 @@ window.onload = async (event) => {
 
     categories.forEach(category => {
         // create a card
-        const cardElement = createDiv('card');
+        const cardElement = createElement('div', 'card');
         const headerElement = document.createElement('h3');
         headerElement.innerText = category.name;
 
@@ -16,8 +16,30 @@ window.onload = async (event) => {
 
         // for each link in the category...
         category.values.forEach(link => {
-            // ... create a link in the html
+            // console.log(`LINK: ${JSON.stringify(link)}`);
+
+            // create the link
             const anchorElement = createAnchor(link.name, link.uri);
+            const attr = document.createAttribute("class");
+            anchorElement.setAttributeNode(attr);
+            anchorElement.classList.add('site-link');
+
+            // if there is an icon
+            if (link.icon) {
+                // add the icon
+                const iconElement = createElement('i', 'icon', 'fa', 'fa-lg', link.icon);
+                const ariaAttr = document.createAttribute('aria-hidden');
+                ariaAttr.value = "true";
+                iconElement.setAttributeNode(ariaAttr);
+
+                anchorElement.appendChild(iconElement);
+            } else {
+                // otherwise, create a spacer
+                const iconSpacerElement = createElement('div', 'icon');
+                anchorElement.appendChild(iconSpacerElement);
+            }
+            const text = document.createTextNode(link.name);
+            anchorElement.appendChild(text);
             cardElement.appendChild(anchorElement);
         });
 
@@ -33,16 +55,18 @@ async function fetchLinks() {
     return json;
 }
 
-function createDiv(withClass) {
-    const divElement = document.createElement('div');
+function createElement(elementName, ...withClasses) {
+    const element = document.createElement(elementName);
 
-    if (withClass) {
+    if (withClasses) {
         const attr = document.createAttribute("class");
-        divElement.setAttributeNode(attr);
-        divElement.classList.add(withClass);
+        element.setAttributeNode(attr);
+        withClasses.forEach(classname => {
+            element.classList.add(classname);
+        });
     }
 
-    return divElement;
+    return element;
 }
 
 function createAnchor(name, uri) {
@@ -50,7 +74,6 @@ function createAnchor(name, uri) {
     const href = document.createAttribute("href");
     href.value = uri;
     anchorElement.setAttributeNode(href);
-    anchorElement.innerText = name;
 
     return anchorElement;
 }

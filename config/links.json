@@ -5,11 +5,13 @@
             "values": [
                 {
                     "name": "GitHub",
-                    "uri": "https://github.com/curtisbridges"
+                    "uri": "https://github.com/curtisbridges",
+                    "icon": "fa-github"
                 },
                 {
                     "name": "StackOverflow",
-                    "uri": "https://stackoverflow.com/"
+                    "uri": "https://stackoverflow.com/",
+                    "icon": "fa-stack-overflow"
                 },
                 {
                     "name": "ColorHunt",
@@ -22,11 +24,13 @@
             "values": [
                 {
                     "name": "Spotify",
-                    "uri": "https://open.spotify.com/"
+                    "uri": "https://open.spotify.com/",
+                    "icon": "fa-spotify"
                 },
                 {
                     "name": "Netflix",
-                    "uri": "https://www.netflix.com/browse"
+                    "uri": "https://www.netflix.com/browse",
+                    "icon": "fa-television"
                 },
                 {
                     "name": "Disney+",
@@ -43,27 +47,33 @@
             "values": [
                 {
                     "name": "YouTube",
-                    "uri": "https://www.youtube.com/"
+                    "uri": "https://www.youtube.com/",
+                    "icon": "fa-youtube-play"
                 },
                 {
                     "name": "Gmail",
-                    "uri": "https://mail.google.com/"
+                    "uri": "https://mail.google.com/",
+                    "icon": "fa-envelope"
                 },
                 {
                     "name": "Calendar",
-                    "uri": "https://calendar.google.com/"
+                    "uri": "https://calendar.google.com/",
+                    "icon": "fa-calendar"
                 },
                 {
                     "name": "Photos",
-                    "uri": "https://photos.google.com/"
+                    "uri": "https://photos.google.com/",
+                    "icon": "fa-camera"
                 },
                 {
                     "name": "Maps",
-                    "uri": "https://maps.google.com/"
+                    "uri": "https://maps.google.com/",
+                    "icon": "fa-map-marker"
                 },
                 {
                     "name": "Drive",
-                    "uri": "https://drive.google.com/"
+                    "uri": "https://drive.google.com/",
+                    "icon": "fa-hdd-o"
                 }
             ]
         },
@@ -72,11 +82,13 @@
             "values": [
                 {
                     "name": "Feedly",
-                    "uri": "https://feedly.com/i/my"
+                    "uri": "https://feedly.com/i/my",
+                    "icon": "fa-rss"
                 },
                 {
                     "name": "Pocket",
-                    "uri": "https://app.getpocket.com/"
+                    "uri": "https://app.getpocket.com/",
+                    "icon": "fa-get-pocket"
                 },
                 {
                     "name": "The Verge",
@@ -89,7 +101,8 @@
             "values": [
                 {
                     "name": "Amazon",
-                    "uri": "http://www.amazon.com/"
+                    "uri": "http://www.amazon.com/",
+                    "icon": "fa-amazon"
                 },
                 {
                     "name": "Drop",
@@ -106,15 +119,18 @@
             "values": [
                 {
                     "name": "Twitter",
-                    "uri": "https://twitter.com/home"
+                    "uri": "https://twitter.com/home",
+                    "icon": "fa-twitter"
                 },
                 {
                     "name": "Reddit",
-                    "uri": "https://www.reddit.com/"
+                    "uri": "https://www.reddit.com/",
+                    "icon": "fa-reddit-alien"
                 },
                 {
                     "name": "Tumblr",
-                    "uri": "https://www.tumblr.com/dashboard"
+                    "uri": "https://www.tumblr.com/dashboard",
+                    "icon": "fa-tumblr"
                 }
             ]
         }
