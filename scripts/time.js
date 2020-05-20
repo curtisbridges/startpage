@@ -3,6 +3,7 @@ window.addEventListener("load", updateTime, true);
 
 function updateTime() {
     const currentDate = new Date();
+    document.getElementById('greeting-header').innerHTML = getSalutation(currentDate, 'Curtis');
 
     const timeOptions = {
         hour12: false,
@@ -19,12 +20,12 @@ function updateTime() {
     }
     const dateString = currentDate.toLocaleDateString("en-US", dateOptions);
 
-    document.getElementById('date-time').innerHTML = `${timeString} ${dateString}`;
+    // and then set the date and time elements of the page
+    document.getElementById('date').innerHTML = `${dateString}`;
+    document.getElementById('time').innerHTML = `${timeString}`;
+
+    // and make sure to update it once per minute
     setTimeout(function () { updateTime() }, 60000);
-
-    document.getElementById('greeting-header').innerHTML = getSalutation(currentDate, 'Curtis');
-
-
 }
 
 function getSalutation(currentDate = new Date(), name = 'Curtis') {
