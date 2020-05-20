@@ -18,24 +18,29 @@ window.onload = async (event) => {
         category.values.forEach(link => {
             // console.log(`LINK: ${JSON.stringify(link)}`);
 
-            // create the span containing
-            const spanElement = createElement('span', 'site-link');
+            // create the link
+            const anchorElement = createAnchor(link.name, link.uri);
+            const attr = document.createAttribute("class");
+            anchorElement.setAttributeNode(attr);
+            anchorElement.classList.add('site-link');
+
+            // if there is an icon
             if (link.icon) {
-                // the icon
+                // add the icon
                 const iconElement = createElement('i', 'icon', 'fa', 'fa-lg', link.icon);
                 const ariaAttr = document.createAttribute('aria-hidden');
                 ariaAttr.value = "true";
                 iconElement.setAttributeNode(ariaAttr);
 
-                spanElement.appendChild(iconElement);
+                anchorElement.appendChild(iconElement);
             } else {
+                // otherwise, create a spacer
                 const iconSpacerElement = createElement('div', 'icon');
-                spanElement.appendChild(iconSpacerElement);
+                anchorElement.appendChild(iconSpacerElement);
             }
-            // and the link
-            const anchorElement = createAnchor(link.name, link.uri);
-            spanElement.appendChild(anchorElement);
-            cardElement.appendChild(spanElement);
+            const text = document.createTextNode(link.name);
+            anchorElement.appendChild(text);
+            cardElement.appendChild(anchorElement);
         });
 
         linksElement.appendChild(cardElement);
@@ -69,7 +74,6 @@ function createAnchor(name, uri) {
     const href = document.createAttribute("href");
     href.value = uri;
     anchorElement.setAttributeNode(href);
-    anchorElement.innerText = name;
 
     return anchorElement;
 }
