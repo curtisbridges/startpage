@@ -3,15 +3,18 @@ A browser startpage specifically for me.
 
 ## TODO
 
-- [ ] Minimum viable product (duh!)
-- [x] Web search
-- [ ] Web search shortcuts (wiki ddg yt twi, etc)
-- [ ] Random background image (with annotation?)
-- [ ] Host in GitHub
-- [x] Configurable (via JSON) Links
-- [x] Date / Time
-- [x] Greeting based upon time
-- [x] Weather display (1. hard coded) (2. based upon locality)
+- [ ] Responsive
 - [ ] System theme applied to page
+- [ ] Font-Awesome icons
+- [ ] Web search (Google)
+- [ ] Host in GitHub
+- [ ] Date / Time
+  - [ ] Greeting based upon time
+  - [ ] Weather: hard coded
+
+## Version 2
 - [ ] Add configurable themes
-- [x] Responsive
+- [ ] Configurable (via JSON) Links
+- [ ] Random background image (with annotation?)
+- [ ] Weather: based upon locality
+- [ ] Web search shortcuts (wiki ddg yt twi, etc)

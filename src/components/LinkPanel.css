@@ -1,0 +1,22 @@
+.link-panel {
+  background: var(--sbg);
+  border-radius: .25rem;
+  box-shadow: .5rem .5rem 1rem #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-width: 5rem;
+  min-height: 5rem;
+  
+  margin: 1rem;
+  padding: 1rem;
+
+  /* outline: 1px dashed orange; */
+}
+
+.link-icon {
+  color: var(--sfg);
+  font-size: var(--mid-size);
+}
