@@ -5,6 +5,7 @@
   --sbg: #e4e6e6; /* Cards color */
   --fg: #3a3a3a; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
+  --shadow: #666;
 
   --big-size: 5rem;
   --lrg-size: 4rem;
@@ -22,6 +23,7 @@
   --sbg: #201e21; /* Cards color */
   --fg: #d8dee9; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
+  --shadow: #111;
 }
 
 .App {
@@ -33,6 +35,7 @@
 .App-grid {
   display: grid;
   gap: 1rem;
+  padding: 3rem;
 
   /* outline: 1px solid red; */
 }
@@ -43,5 +46,15 @@
     grid-template-columns: repeat(2, auto);
 
     justify-self: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #4b8ec4; /* Hover color */
+    --bg: #19171a; /* Background color */
+    --sbg: #201e21; /* Cards color */
+    --fg: #d8dee9; /* Foreground color */
+    --sfg: #3a3a3a; /* Secondary Foreground color */
   }
 }

@@ -9,7 +9,7 @@
 .link-collection {
   background: var(--sbg);
   border-radius: .25rem;
-  box-shadow: .5rem .5rem 1rem #ccc;
+  box-shadow: .1rem .25rem .5rem var(--shadow);
   
   min-width: 10rem;
   
