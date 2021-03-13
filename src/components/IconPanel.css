@@ -3,6 +3,8 @@
   border-radius: .25rem;
   box-shadow: .5rem .5rem 1rem #ccc;
 
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,3 +1,11 @@
+.link-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  /* outline: 1px dashed lime; */
+}
+
 .link-collection {
   background: var(--sbg);
   border-radius: .25rem;
@@ -38,6 +46,7 @@
 
 .link-item > a {
   color: var(--fg);
+  cursor: pointer;
   font-weight: 500;
   text-decoration: none;
 }

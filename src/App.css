@@ -11,6 +11,8 @@
   --mid-size: 2.5rem;
   --nml-size: 1.6rem;
   --sml-size: 1.2rem;
+
+  --desktop-breakpoint: 576px;
 }
 
 .darktheme {
@@ -23,44 +25,23 @@
 }
 
 .App {
-  background: var(--bg);
-  color: var(--fg);
-
   text-align: center;
-  outline: 1px dotted purple;
 
-  height: 100vh;
-}
-
-.App-splitter {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  padding: 2rem;
-
-  outline: 1px solid limegreen;
+  /* outline: 1px dotted lime; */
 }
 
 .App-grid {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 1rem;
 
-  min-width: 15rem;
-  max-width: 30rem;
-
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
-/* CHEATING */
-.fixed {
-  height: 200px;
-}
+@media (min-width: 576px) {
+  .App-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 
-@media (max-width: 600px) {
-  .App-splitter {
-    flex-direction: column;
+    justify-self: center;
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import './LinkPanel.css'
+import './IconPanel.css'
 
-const LinkPanel = ({ name, url, alt, icon }) => {
+const IconPanel = ({ name, url, alt, icon }) => {
   return (
     <div className="link-panel">
       <a href={url} alt={alt}>
@@ -18,4 +18,4 @@ const generateIcon = (icon) => {
   return <FontAwesomeIcon className="link-icon" icon={icon} />
 }
 
-export default LinkPanel
+export default IconPanel
