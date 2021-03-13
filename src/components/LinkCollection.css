@@ -2,8 +2,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-
-  /* outline: 1px dashed lime; */
 }
 
 .link-collection {
@@ -15,8 +13,6 @@
   
   margin: 1rem;
   padding: 1rem;
-
-  /* outline: 1px dashed orange; */
 }
 
 .link-container {
@@ -33,15 +29,11 @@
 .link-list {
   padding: 0;
   list-style: none;
-
-  /* outline: 1px solid red; */
 }
 
 .link-item {
   padding: .5rem 0;
   text-align: center;
-  
-  /* outline: 1px solid orange; */
 }
 
 .link-item > a {

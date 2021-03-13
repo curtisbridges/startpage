@@ -7,6 +7,7 @@
   --sfg: #3a3a3a; /* Secondary Foreground color */
   --shadow: #666;
 
+  --huge-size: 6rem;
   --big-size: 5rem;
   --lrg-size: 4rem;
   --mid-size: 2.5rem;
@@ -16,28 +17,29 @@
   --desktop-breakpoint: 576px;
 }
 
-.darktheme {
-  /* Dark theme  */
-  --accent: #4b8ec4; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
-  --shadow: #111;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #4b8ec4; /* Hover color */
+    --bg: #19171a; /* Background color */
+    --sbg: #201e21; /* Cards color */
+    --fg: #d8dee9; /* Foreground color */
+    --sfg: #3a3a3a; /* Secondary Foreground color */
+    --shadow: #111;
+  }
 }
 
 .App {
   text-align: center;
-
-  /* outline: 1px dotted lime; */
 }
 
 .App-grid {
   display: grid;
   gap: 1rem;
   padding: 3rem;
+}
 
-  /* outline: 1px solid red; */
+.debug {
+  outline: 1px solid red;
 }
 
 @media (min-width: 576px) {
@@ -46,15 +48,5 @@
     grid-template-columns: repeat(2, auto);
 
     justify-self: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #4b8ec4; /* Hover color */
-    --bg: #19171a; /* Background color */
-    --sbg: #201e21; /* Cards color */
-    --fg: #d8dee9; /* Foreground color */
-    --sfg: #3a3a3a; /* Secondary Foreground color */
   }
 }

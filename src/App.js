@@ -20,11 +20,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-grid">
-        <div>
+        <div className="">
           <Time />
           <Greeting />
         </div>
-        <div>
+        <div className="">
           <DateComponent />
           <Weather />
         </div>

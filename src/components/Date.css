@@ -4,6 +4,6 @@
 
 @media (min-width: 576px) {
   .date {
-    font-size: var(--big-size);
+    font-size: var(--huge-size);
   }
 }
