@@ -1,0 +1,15 @@
+.Icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  
+  align-self: center;
+  justify-content: center;
+
+  /* outline: 1px dashed red; */
+}
+
+@media (min-width: 576px) {
+  .Icon-grid {
+    grid-template-columns: repeat(3, auto);
+  }
+}

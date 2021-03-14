@@ -1,0 +1,4 @@
+.greeting {
+  font-size: var(--mid-size);
+  padding: 1rem;
+}

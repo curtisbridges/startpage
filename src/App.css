@@ -1,0 +1,52 @@
+:root {
+  /* Light theme  */
+  --accent: #4b8ec4; /* Hover color */
+  --bg: #f5f5f5; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --shadow: #666;
+
+  --huge-size: 6rem;
+  --big-size: 5rem;
+  --lrg-size: 4rem;
+  --mid-size: 2.5rem;
+  --nml-size: 1.6rem;
+  --sml-size: 1.2rem;
+
+  --desktop-breakpoint: 576px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #4b8ec4; /* Hover color */
+    --bg: #19171a; /* Background color */
+    --sbg: #201e21; /* Cards color */
+    --fg: #d8dee9; /* Foreground color */
+    --sfg: #3a3a3a; /* Secondary Foreground color */
+    --shadow: #111;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.debug {
+  outline: 1px solid red;
+}
+
+@media (min-width: 576px) {
+  .App-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    justify-self: center;
+  }
+}
