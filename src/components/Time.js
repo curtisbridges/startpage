@@ -7,9 +7,14 @@ const Time = () => {
   const [time, setTime] = useState(new Date())
 
   useEffect(() => {
-    setTimeout(() => {
-      setTime(new Date())
-    }, 60 * 1000)
+    const refresh = () => {
+      setTimeout(() => {
+        setTime(new Date())
+        refresh()
+      }, 60 * 1000)
+    }
+
+    refresh()
   }, [])
 
   return <div className="time">{format(time, 'kk:mm')}</div>
