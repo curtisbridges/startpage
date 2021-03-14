@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { format } from 'date-fns'
 
 import './Time.css'
 
 const Time = () => {
-  return <div className="time">{getTime()}</div>
-}
+  const [time, setTime] = useState(new Date())
 
-const getTime = () => {
-  const time = new Date()
-  const formatted = format(time, 'kk:mm')
-  return formatted
+  useEffect(() => {
+    setTimeout(() => {
+      setTime(new Date())
+    }, 60 * 1000)
+  }, [])
+
+  return <div className="time">{format(time, 'kk:mm')}</div>
 }
 
 export default Time
