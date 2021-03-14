@@ -1,6 +1,10 @@
 # startpage
 A browser startpage specifically for me.
 
+The appearance is lifted from [this page](https://github.com/MiguelRAvila/Bento) but the implementation is mine, done with React. (I did steal the CSS variables to match the appearance.)
+
+![Screenshot](/.github/images/startpage.png?raw=true "My Startpage")
+
 ## TODO
 
 - [x] Responsive
@@ -9,8 +13,8 @@ A browser startpage specifically for me.
 - [x] Date / Time
   - [x] Greeting based upon time
   - [x] Weather: hard coded zipcode (but dynamic weather)
-- [ ] Host in GitHub (deploy via actions)
-- [ ] Auto-refresh
+- [x] Host in GitHub
+- [x] Auto-refresh
 
 ## Version 2
 - [ ] Configurable (via JSON) Links
