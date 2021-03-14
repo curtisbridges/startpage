@@ -1,0 +1,44 @@
+.link-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.link-collection {
+  background: var(--sbg);
+  border-radius: .25rem;
+  box-shadow: .1rem .25rem .5rem var(--shadow);
+  
+  min-width: 10rem;
+  
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-icon {
+  color: var(--sfg);
+  font-size: var(--mid-size);
+}
+
+.link-list {
+  padding: 0;
+  list-style: none;
+}
+
+.link-item {
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.link-item > a {
+  color: var(--fg);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}

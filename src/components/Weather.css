@@ -1,0 +1,18 @@
+.weather {
+  font-size: var(--sml-size);
+  padding: 1rem;
+}
+
+.weather-icon {
+  color: var(--accent);
+  font-size: var(--mid-size);
+  padding-right: .5rem;
+}
+
+.weather-temperature {
+  font-weight: bold;
+}
+
+.weather-conditions {
+  /* nothing, yet */
+}

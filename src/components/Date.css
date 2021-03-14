@@ -1,0 +1,9 @@
+.date {
+  font-size: var(--mid-size);
+}
+
+@media (min-width: 576px) {
+  .date {
+    font-size: var(--huge-size);
+  }
+}
