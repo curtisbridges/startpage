@@ -13,7 +13,7 @@ The appearance is lifted from [this page](https://github.com/MiguelRAvila/Bento)
 - [x] Date / Time
   - [x] Greeting based upon time
   - [x] Weather: hard coded zipcode (but dynamic weather)
-- [ ] Host in GitHub (deploy via actions)
+- [x] Host in GitHub
 - [x] Auto-refresh
 
 ## Version 2
