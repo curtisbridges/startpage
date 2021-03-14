@@ -3,13 +3,14 @@ A browser startpage specifically for me.
 
 ## TODO
 
-- [ ] Host in GitHub (deploy via actions)
 - [x] Responsive
 - [x] System theme applied to page
 - [x] Font-Awesome icons
 - [x] Date / Time
   - [x] Greeting based upon time
-  - [ ] Weather: hard coded
+  - [x] Weather: hard coded zipcode (but dynamic weather)
+- [ ] Host in GitHub (deploy via actions)
+- [ ] Auto-refresh
 
 ## Version 2
 - [ ] Configurable (via JSON) Links
