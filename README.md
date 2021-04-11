@@ -5,6 +5,14 @@ The appearance is lifted from [this page](https://github.com/MiguelRAvila/Bento)
 
 ![Screenshot](/.github/images/startpage.png?raw=true "My Startpage")
 
+## Technology Used
+1. React & React Hooks
+2. React & FontAwesome integration
+3. Remote REST API (for weather data)
+   1. deployed on server without exposing private API keys
+   2. async/await fetch
+   3. consuming JSON data from API
+
 ## TODO
 
 - [x] Responsive
